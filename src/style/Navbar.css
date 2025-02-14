@@ -1,0 +1,91 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.cta-button {
+  background-color: #ff6200;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cta-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #e55c00;
+}
+
+/* src/App.css (Global styles) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Registration page styling */
+.registration-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-page input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.registration-page button {
+  background-color: #ff6200;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.registration-page button:hover {
+  background-color: #e55c00;
+}

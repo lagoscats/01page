@@ -1,0 +1,52 @@
+/* Container for all service items */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  /* Individual service item */
+  .service-item {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    transform: translateX(-50px); /* Initial position for left/right */
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Zoom-in effect */
+  .service-item.zoom-in {
+    transform: translateX(0); /* Moves back to the normal position */
+    opacity: 1;
+  }
+  
+  /* Left-side entry */
+  .service-item.left {
+    transform: translateX(-50px);
+  }
+  
+  /* Right-side entry */
+  .service-item.right {
+    transform: translateX(50px);
+  }
+  
+  /* Hover effects to slightly zoom the items */
+  .service-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styling for text */
+  .service-item h3 {
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    color: #333;
+  }
+  
