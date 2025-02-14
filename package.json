@@ -2,6 +2,7 @@
   "name": "01page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lagoscats.github.io/01page",
   "dependencies": {
     "cra-template": "1.2.0",
     "framer-motion": "^11.15.0",
@@ -9,14 +10,16 @@
     "react-dom": "^18.0.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
