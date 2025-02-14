@@ -34,8 +34,15 @@
 }
 
 .nav-links a:hover {
-  background-color: #ff7200;
+  /* Add your styles here */
+  color: #fff; /* Change text color on hover */
+  background-color: #007bff; /* Change background color on hover */
+  text-decoration: none; /* Remove underline */
+  padding: 5px 10px; /* Add padding for better visibility */
+  border-radius: 5px; /* Optional: adds rounded corners */
 }
+
+
 .cta-button {
   background-color: #ff6200;
   padding: 10px 20px;
