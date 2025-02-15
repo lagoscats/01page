@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 // Import social media icons (you can use Font Awesome, Material Icons, or any library you prefer)
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
@@ -8,9 +7,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-content">
-        <Helmet>
             <h1 className="heading">Contact Us</h1>
-        </Helmet>
         <p className="description">
           We would love to hear from you! Feel free to reach out with any questions or comments.
         </p>

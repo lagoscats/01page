@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Profile from "./assets/ugomma.png";
 import Registration from "./pages/Registration";
+import 'font-awesome/css/font-awesome.min.css';
 import "./App.css"; // Global styling
 
 const App = () => {

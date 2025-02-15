@@ -10,6 +10,7 @@ const Pricing = () => {
 
   return (
     <div className="pricing-container">
+      <h1>Our Prices</h1>
       <div
         className={`pricing-item ${isZoomed ? 'zoom-in' : ''}`}
         onMouseEnter={() => setIsZoomed(true)}

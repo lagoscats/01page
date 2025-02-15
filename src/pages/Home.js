@@ -1,24 +1,49 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Assuming you're using React Router for navigation
+import { Link } from "react-router-dom"; // For linking to the registration page
+import About from "./About";
+import Services from "../components/Services";
+import Pricing from "../components/Pricing";
+import Contact from "../components/Contact";
+/*import HeroImage from './HeroImage'; // Example of another component you may have*/
 
 const Home = () => {
-  const navigate = useNavigate();
-
-  const navigateToRegistration = () => {
-    navigate("/registration"); // Redirect to the registration page
-  };
-
   return (
-    <div className="home-container">
-      <div className="home-content">
-        <h1 className="heading">Welcome to Our Website!</h1>
-        <p className="subheading">
-          Sign up today to start your journey with us.
-        </p>
-        <button className="cta-button" onClick={navigateToRegistration}>
-          Get Started
-        </button>
+    <div className="home">
+      
+      <div className="hero-container">
+        
+        <div className="hero-text">
+          <h1>Welcome to Our Amazing App!</h1>
+          <p>Join us now to experience the future of web technology.</p>
+
+          {/* Call to Action Button */}
+          <Link to="/registration" className="cta-button">
+            Register Now
+          </Link>
+        </div>
       </div>
+      <About />
+      <Services />
+      <Contact />
+      <Pricing />
+
+      {/* Footer with Social Media Links */}
+      <footer className="footer">
+        <div className="footer-content">
+          <p>&copy; 2025 YourCompany. All rights reserved.</p>
+          <div className="social-media">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i> {/* Font Awesome icon */}
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

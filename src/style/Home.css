@@ -1,86 +1,94 @@
-/* Define the container for the page */
-.home-container {
+/* General styles for the Home component */
+.home {
+  font-family: Arial, sans-serif;
+}
+
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #282c34;
+  color: white;
   overflow: hidden;
+  position: relative;
+  padding: 0 20px;
 }
 
-/* Add the zoom effect when the page loads */
-.home-content {
+.hero-text {
   text-align: center;
-  transform: scale(0);
-  animation: zoomIn 1s forwards;
+  z-index: 10;
 }
 
-/* Animation for zooming in */
-@keyframes zoomIn {
-  0% {
-    transform: scale(0) translateX(-50%) translateY(-50%);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Styling for heading */
-.heading {
-  font-size: 3rem;
-  font-weight: bold;
+.hero-text h1 {
+  font-size: 3em;
   margin-bottom: 20px;
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-  animation-delay: 1s;
 }
 
-/* Fade-in effect for heading */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
-/* Styling for subheading */
-.subheading {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
-  color: #555;
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-  animation-delay: 1.5s;
-}
-
-/* Styling for the CTA button */
 .cta-button {
   padding: 15px 30px;
-  font-size: 1.2rem;
-  background-color: #007bff;
+  font-size: 1.5em;
+  background-color: #ff5722;
   color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #e64a19;
   transform: scale(1.1);
 }
 
-/* Ensure everything is centered */
-.home-container {
+.cta-button:focus {
+  outline: none;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  padding: 0 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ff5722;
+}
+
+/* Dynamic Zoom-In Animation */
+.hero-container {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
